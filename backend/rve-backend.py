@@ -269,7 +269,7 @@ class HandleApplication:
             "--tensorrt_opt_profile",
             help="sets tensorrt optimization profile for model, (1/2/3/4/5, default=3)",
             type=int,
-            default=3,
+            default=5,
         )
         parser.add_argument(
             "--tensorrt_dynamic_shapes",
@@ -385,7 +385,7 @@ class HandleApplication:
         parser.add_argument(
             "--device",
             help="Device used for inference. CUDA is used for any CUDA/ROCm device, MPS is for MacOS, and CPU is for well, cpu (cuda, mps, xpu, cpu - float32 only)",
-            default="auto",
+            default="cuda",
             choices=[
                 "auto",
                 "cuda",
