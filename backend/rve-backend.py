@@ -269,7 +269,7 @@ class HandleApplication:
             "--tensorrt_opt_profile",
             help="sets tensorrt optimization profile for model, (1/2/3/4/5, default=3)",
             type=int,
-            default=5,
+            default=3,
         )
         parser.add_argument(
             "--tensorrt_dynamic_shapes",
