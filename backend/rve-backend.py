@@ -385,7 +385,7 @@ class HandleApplication:
         parser.add_argument(
             "--device",
             help="Device used for inference. CUDA is used for any CUDA/ROCm device, MPS is for MacOS, and CPU is for well, cpu (cuda, mps, xpu, cpu - float32 only)",
-            default="cuda",
+            default="auto",
             choices=[
                 "auto",
                 "cuda",
